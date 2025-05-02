@@ -1,0 +1,509 @@
+﻿/* General Body Styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #b3e5fc, #e3f2fd); /* Light gradient sky blue */
+    color: #333;
+    font-size: 12pt; /* Set font size to 12pt */
+    /* Add these lines for the footer */
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+    min-height: 100vh; /* Ensure full viewport height for short pages */
+}
+
+/* Main Title Styling */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.st1 {
+    font-weight: bold;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background: #005c5c; /* Slightly darker than the body */
+    margin: 0;
+    padding: 15px 0;
+}
+
+    nav ul li {
+        position: relative;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav ul li ul {
+            display: none; /* Hide dropdown by default */
+            position: absolute;
+            background-color: #005c5c;
+            padding: 10px;
+            list-style: none;
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        nav ul li:hover ul {
+            display: block; /* Show on hover */
+            z-index: 10;
+        }
+
+        nav ul li ul li {
+            margin: 5px 0;
+            padding: 10px 15px; /* Add padding for more space */
+            white-space: nowrap; /* Ensure text stays in one line */
+            width: auto; /* Allow enough space for long text */
+        }
+
+            nav ul li ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+/* Section Styling */
+main:not(#project-page) section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Keep centering for non-project pages */
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    background: #f9f9f9; /* Very light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    /* Image Styling */
+    main:not(#project-page) section img {
+        width: 50%; /* Adjust image size to be half the container */
+        border-radius: 10px;
+        margin-right: 20px; /* Add spacing */
+    }
+
+    main section .content {
+        flex: 1; /* Expand the text content to fill remaining space */
+        text-align: left;
+    }
+
+        main section .content h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        main section .content p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        main section .content button {
+            font-size: 1em;
+            color: white;
+            background: #003366;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+            main section .content button:hover {
+                background: #005c5c;
+            }
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: space-between; /* Spread footer content evenly */
+    align-items: center; /* Align items vertically in the center */
+    padding: 20px 50px;
+    background: linear-gradient(to right, #003366, #005c5c); /* Footer gradient background */
+    color: white;
+    flex-wrap: wrap;
+    min-height: 150px; /* Ensure the footer has a minimum height */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+/* Align sections appropriately */
+.footer-left {
+    flex: 1;
+    text-align: right; /* Align text to the right for the left section */
+    margin-right: 20px;
+}
+
+.footer-center {
+    flex: 0.5; /* Allow this section to shrink slightly */
+    text-align: center;
+    padding: 10px; /* Add space for better readability */
+}
+
+.footer-right {
+    flex: 1;
+    text-align: left; /* Align text to the left for the right section */
+    margin-left: 20px;
+}
+
+/* Links in footer */
+footer a {
+    text-decoration: none;
+    color: lightblue;
+    font-weight: bold;
+}
+
+    footer a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+main {
+    flex: 1; /* Allow the main content to grow and push the footer down */
+}
+
+/* Animation Block Styling */
+.animation-block {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    animation: moveUpDown 2s infinite alternate; /* Smooth up-down movement */
+}
+
+.animation-left {
+    left: 0;
+    top: 10%; /* Start at 10% from the top */
+}
+
+.animation-right {
+    right: 0;
+    top: 10%; /* Start at 10% from the top */
+}
+
+/* Keyframe Animation */
+@keyframes moveUpDown {
+    0% {
+        top: 10%; /* Stay 10% from the top of the viewport */
+        background-color: blue;
+    }
+
+    100% {
+        top: 80%; /* Move to 90% of the viewport height */
+        background-color: green;
+    }
+}
+
+
+
+/* Centered Buttons for Switching */
+.toggle-buttons {
+    text-align: center;
+    margin: 20px 0; /* Adds space above and below */
+}
+
+    .toggle-buttons button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        background-color: darkblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        .toggle-buttons button:hover {
+            background-color: navy; /* Button hover effect */
+        }
+
+/* Text Content Styling */
+.text-content {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+img {
+    max-width: 300px; /* Ensures all images are within a limit */
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Hidden Sections */
+.hidden {
+    display: none; /* Default hidden state */
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+    .contact-form input,
+    .contact-form textarea {
+        flex: 1 1 100%; /* Ensures full width of inputs */
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+        background-color: darkblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+        .contact-form button:hover {
+            background-color: navy; /* Hover color */
+        }
+
+/* Warning Message */
+.warning-message {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px; /* Adds spacing */
+}
+
+/* Add space between sections */
+#contact-form-section {
+    margin-top: 40px;
+}
+
+/* Scoped Styles for About Page */
+#about-page .section-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds spacing */
+    margin: 20px 0;
+}
+
+    #about-page .section-container img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+#about-page .content-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Scoped Styles for Portfolio Page */
+#portfolio-page .portfolio-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#portfolio-page .portfolio-content {
+    display: flex; /* Set flexbox to align projects horizontally */
+    justify-content: space-around; /* Space out the projects equally */
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+    gap: 20px; /* Add spacing between projects */
+    margin: 0 auto;
+    max-width: 1200px; /* Increase max width for better spacing */
+}
+
+#portfolio-page .project {
+    display: flex;
+    flex-direction: column; /* Stack items vertically within each project */
+    align-items: center;
+    width: 30%; /* Keep each project’s width proportionate */
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+    #portfolio-page .project:hover {
+        transform: scale(1.05); /* Highlight effect on hover */
+    }
+
+    #portfolio-page .project img {
+        width: 100%; /* Ensure images scale to their container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    #portfolio-page .project button {
+        padding: 10px 20px;
+        background-color: darkblue; /* Match button styles with other pages */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        #portfolio-page .project button:hover {
+            background-color: navy; /* Darker blue on hover */
+        }
+
+
+/* Scoped Styling for About Page */
+#about-page {
+    text-align: center;
+    margin: 20px auto;
+}
+
+    #about-page .toggle-buttons {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+        #about-page .toggle-buttons button {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+            #about-page .toggle-buttons button:hover {
+                background-color: #005c5c;
+            }
+
+    #about-page .about-section {
+        display: flex;
+        flex-direction: row; /* Align image and text in a row */
+        gap: 20px;
+        align-items: center; /* Align items vertically in the center */
+        max-width: 900px;
+        margin: 30px auto;
+        background: #f9f9f9; /* Very light gray background */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        text-align: left;
+    }
+
+        #about-page .about-section img {
+            max-width: 300px; /* Limit image size */
+            border-radius: 10px;
+        }
+
+        #about-page .about-section.hidden {
+            display: none; /* Completely hide the section */
+        }
+
+        #about-page .about-section .text-content {
+            flex: 1; /* Expand the text content to fill remaining space */
+        }
+
+            #about-page .about-section .text-content h2 {
+                font-size: 2em;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            #about-page .about-section .text-content p {
+                font-size: 1.2em;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+
+/* Scoped Styling for Project Pages */
+#project-page .title-section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#project-page .project-content {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal layout */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between the two sections */
+    margin: 20px auto;
+    max-width: 1000px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+
+#project-page .image-gallery-vertical {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: flex-start; /* Align images to the left */
+    gap: 15px; /* Space between images */
+    flex: 1; /* Take less space compared to text */
+}
+
+    #project-page .image-gallery-vertical img {
+        width: 100%; /* Allow images to take up full width of the container */
+        max-width: 350px; /* Increase maximum width to make images larger */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px; /* Optional rounded corners */
+        margin: 0; /* Remove any centering issues */
+        display: block; /* Proper stacking within vertical flex container */
+    }
+
+#project-page .text-content-expanded {
+    flex: 2; /* Take more space than the image gallery */
+    max-width: 600px; /* Adjust max width */
+    padding: 20px; /* Padding for better spacing */
+    background: #f9f9f9; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Align text to the left */
+}
+
+#project-page .project-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+    #project-page .project-nav button {
+        padding: 10px 20px;
+        background-color: #003366;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+        #project-page .project-nav button:hover {
+            background-color: #005c5c;
+        }

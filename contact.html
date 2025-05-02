@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-inline';">
+    <meta name="description" content="This is my personal website, to show my projects, skills, and contact information.">
+    <meta name="author" content="Meng Yan">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/script1.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar"></div>
+
+    <!-- Animated Blocks -->
+    <div class="animation-block animation-left"></div>
+    <div class="animation-block animation-right"></div>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Contact Me</h1>
+
+        <!-- Contact Information -->
+        <section class="content-section">
+            <div class="text-content centered">
+                <h2>Contact Me</h2>
+                <p>Call: (+1) 253-290-9338</p>
+                <p>Email: <a href="mailto:myan2@uw.edu">myan2@uw.edu</a></p>
+                <p>Handshake: <a href="https://tacomauw.joinhandshake.com/profiles/33786972" target="_blank">tacomauw.joinhandshake.com/profiles/33786972</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/meng-yan-935476225" target="_blank">linkedin.com/in/meng-yan-935476225</a></p>
+                <p>Address: 409 S 23rd St, Tacoma, WA 98402</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact-form-section">
+            <form action="#" method="post" class="contact-form" onsubmit="return validateForm()">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Max 20 words" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <p class="warning-text">
+                    Note: This contact form is currently non-functional. Please email me directly at <a href="mailto:myan2@uw.edu">myan2@uw.edu</a>. Thank you!
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+        // Validation function to enforce a 20-word limit on the message
+        function validateForm() {
+            const message = document.getElementById("message").value.trim();
+            const wordCount = message.split(/\s+/).filter(word => word).length;
+
+            if (wordCount > 20) {
+                alert("Your message exceeds the 20-word limit. Please shorten your message.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

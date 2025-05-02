@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-inline';">
+    <meta name="description" content="This is my personal website, to show my projects, skills, and contact information.">
+    <meta name="author" content="Meng Yan">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/script1.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar"></div>
+
+    <!-- Animated Blocks -->
+    <div class="animation-block animation-left"></div>
+    <div class="animation-block animation-right"></div>
+
+    <!-- Main Content -->
+    <main id="about-page">
+        <h1>About Me</h1>
+
+        <!-- Toggle Buttons -->
+        <div class="toggle-buttons">
+            <button id="abilities-button" onclick="showContent('abilities')">Abilities</button>
+            <button id="myself-button" onclick="showContent('myself')">Personal</button>
+        </div>
+
+        <!-- Abilities Section -->
+        <section id="abilities" class="about-section">
+            <div class="section-container">
+                <img src="photo/myphoto.jpg" alt="Abilities Image">
+                <div class="text-content">
+                    <h2>About My Abilities</h2>
+                    <p>
+                        Hello, I’m Meng Yan, currently pursuing my B.S. in Information Technology at the University of Washington,
+                        with an expected graduation in March 2025. I am passionate about the field of IT, especially in areas such as network
+                        security and information assurance, where I aspire to build a career. My academic journey has equipped me with strong foundational
+                        knowledge, with coursework ranging from programming in Java and C# to web design, systems analysis, and threat modeling.
+                    </p>
+                    <p>
+                        Through various hands-on experiences, I’ve had the opportunity to independently develop websites using technologies
+                        like HTML, CSS, and JavaScript, and collaborate on projects such as a travel agency website where I played a key role
+                        in both technical development and client communication. I also gained experience in network configuration, working with routers,
+                        switches, and simulated environments. I thrive in collaborative environments, always seeking to learn from others while contributing
+                        my own strengths.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Section -->
+        <section id="myself" class="about-section hidden">
+            <div class="section-container">
+                <img src="photo/normalphoto.jpg" alt="Personal Image">
+                <div class="text-content">
+                    <h2>About Myself</h2>
+                    <p>
+                        I am driven by a genuine interest in technology, a desire to constantly improve, and a strong sense of responsibility
+                        in all my tasks. Outside of my academic and professional life, I enjoy exploring various interests such as history,
+                        humanities, and music, which help me stay well-rounded and creative in my approach to problem-solving.
+                    </p>
+                    <p>
+                        I have lived in both China and the United States for many years, which has given me a broader perspective and
+                        more ideas to tackle various tasks. I am always willing to help others.Whether in personal or professional settings, I am keen to apply my skills to solve problems and support others. 
+                    </p>
+                    <p>
+                        In addition, I also have good adaptability and can cope with various different environments after learning.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+</html>
