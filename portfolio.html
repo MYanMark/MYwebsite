@@ -8,7 +8,9 @@
     <meta name="author" content="Meng Yan">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/projectdata.js" defer></script>
     <script src="js/portfolio.js" defer></script>
+    <script src="js/navfooter.js" defer></script>
 </head>
 <body id="portfolio-page">
     <!-- Navigation Bar -->
@@ -17,34 +19,7 @@
     <!-- Main Content -->
     <main>
         <h1 class="portfolio-title">Explore My Projects</h1>
-        <div class="portfolio-content">
-            <!-- Project 1 -->
-            <div class="project">
-                <img src="photo/webpagebar.png" alt="Seattle Ocean Travel Agency">
-                <h3>Seattle Ocean Travel Agency</h3>
-                <p>A travel agency project involving website design and development with user-friendly interfaces.</p>
-                <div class="project-details">
-                    <button onclick="location.href='sota.html'">View Project</button>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="project">
-                <img src="photo/codeshort.png" alt="Network Address Physics Laboratory">
-                <h3>Network Address Physics Laboratory</h3>
-                <p>A laboratory project focusing on network configuration, testing, and performance analysis.</p>
-                <div class="project-details">
-                    <button onclick="location.href='lab.html'">View Project</button>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="project">
-                <img src="photo/uwpage.png" alt="Self HTML Webpages">
-                <h3>Self HTML Webpages</h3>
-                <p>A personal project to build independent HTML webpages demonstrating creativity and technical skills.</p>
-                <div class="project-details">
-                    <button onclick="location.href='perpage.html'">View Project</button>
-                </div>
-            </div>
+        <div id="portfolio-container" class="portfolio-content">
         </div>
     </main>
 

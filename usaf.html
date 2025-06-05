@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-inline';">
+    <meta name="description" content="This is my personal website, to show my projects, skills, and contact information.">
+    <meta name="author" content="Meng Yan">
+    <title>USAF IT Program</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/projectdata.js" defer></script>
+    <script src="js/navfooter.js" defer></script>
+</head>
+<body id="project-page">
+    <!-- Navigation Bar -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="title-section">
+            <h2>USAF IT Program</h2>
+        </div>
+        <section class="project-content">
+            <!-- Image gallery: stacked vertically -->
+            <div class="image-gallery-vertical">
+                <img src="photo/workflow1.png" alt="one of the workflow">
+                <img src="photo/workflow2.png" alt="one of the workflow">
+                <img src="photo/poster.png" alt="the poster after the internship">
+            </div>
+            <!-- Expanded text content -->
+            <div class="text-content-expanded">
+                <div class="text-container">
+                    <p>
+                        This project was part of an internship sponsored by the U.S. Air Force (194th Force Support Squadron) in Fall 2024.
+                        Our objective was to improve internal task management and compliance workflows while ensuring security and accessibility.
+                    </p>
+
+                    <p class="st1">Checklist System Development:</p>
+                    <p>
+                        I helped develop a checklist system designed for multiple departments within the Force Support Squadron.
+                        Each department was granted access only to its own documents, with access control enforced through role-based restrictions.
+                        The checklists were structured according to the Management Internal Control Tool (MITC) format to ensure standardization and consistent compliance across all departments.
+                    </p>
+
+                    <p class="st1">Secure Workflow Automation:</p>
+                    <p>
+                        I helped design and implement a secure workflow tool (Tasker) that enabled users to view, edit, and sign documents
+                        without requiring file downloads or uploads. The system was built to comply with HIPAA and CUI (Controlled Unclassified Information) standards,
+                        supporting secure access and role-based visibility.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="project-nav">
+            <button onclick="location.href='sota.html'">Previous Project</button>
+            <button onclick="location.href='portfolio.html'">Return to Menu</button>
+            <button onclick="location.href='studenttutor.html'">Next Project</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-inline';">
+    <meta name="description" content="This is my personal website, to show my projects, skills, and contact information.">
+    <meta name="author" content="Meng Yan">
+    <title>Student-Tutor Website</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/projectdata.js" defer></script>
+    <script src="js/navfooter.js" defer></script>
+</head>
+<body id="project-page">
+    <!-- Navigation Bar -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="title-section">
+            <h2>Student-Tutor Website</h2>
+        </div>
+        <section class="project-content">
+            <!-- Image gallery: stacked vertically -->
+            <div class="image-gallery-vertical">
+                <img src="photo/login.png" alt="log in page">
+                <img src="photo/studentlist.png" alt="student list">
+                <img src="photo/search.png" alt="search in list">
+            </div>
+            <!-- Expanded text content -->
+            <div class="text-content-expanded">
+                <div class="text-container">
+                    <p>
+                        This full-stack web portal was developed as part of a team project, where I served as the primary developer responsible for most of the technical implementation.
+                        The website supports student-tutor interactions with secure, role-based access and task management functionality.
+                    </p>
+
+                    <p class="st1">Frontend Development:</p>
+                    <p>
+                        I built responsive dashboards, assignment views, and profile pages using HTML, CSS, and JavaScript, focusing on interactive UI and user-friendly design.
+                    </p>
+
+                    <p class="st1">Backend & API:</p>
+                    <p>
+                        I developed RESTful APIs using Node.js (Express) to handle authentication, session control, role-based routing, and assignment/event workflows.
+                    </p>
+
+                    <p class="st1">Database Design:</p>
+                    <p>
+                        I designed and implemented a relational database using SQL Server (SSMS), including schemas for users, assignments, groups, and submissions. CRUD functionality was applied throughout.
+                    </p>
+
+                    <p class="st1">Feature Highlights:</p>
+                    <p>
+                        Key features include login/sign-up validation, role-based access control, assignment creation and management, grouping logic, and event scheduling.
+                        These components came together to create a fully usable and secure system that closely resembles a real-world application.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="project-nav">
+            <button onclick="location.href='usaf.html'">Previous Project</button>
+            <button onclick="location.href='portfolio.html'">Return to Menu</button>
+            <button onclick="location.href='lab.html'">Next Project</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+</html>
