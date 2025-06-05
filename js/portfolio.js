@@ -1,19 +1,21 @@
 
-// Load the navigation bar
-fetch('navigationbar.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading navigation bar:', error));
+// Find the portfolio container
+const portfolioContainer = document.getElementById("portfolio-container");
 
-// Load the footer
-fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading footer:', error));
+// Dynamically create and insert project cards
+projects.forEach(project => {
+    const projectCard = document.createElement("div");
+    projectCard.className = "project";
 
-// Placeholder for projects
+    projectCard.innerHTML = `
+        <img src="${project.image}" alt="${project.title}">
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <div class="project-details">
+            <button onclick="location.href='${project.link}'">View Project</button>
+        </div>
+    `;
+
+    portfolioContainer.appendChild(projectCard);
+});
 
