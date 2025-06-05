@@ -222,8 +222,8 @@ img {
 
 #portfolio-page .portfolio-content {
     display: flex; /* Set flexbox to align projects horizontally */
-    justify-content: space-around; /* Space out the projects equally */
-    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+    justify-content: center; /* Center porject */
+    flex-wrap: wrap; /* now it can wrapping to a new line */
     gap: 20px; /* Add spacing between projects */
     margin: 0 auto;
     max-width: 1200px; /* Increase max width for better spacing */
@@ -233,7 +233,8 @@ img {
     display: flex;
     flex-direction: column; /* Stack items vertically within each project */
     align-items: center;
-    width: 30%; /* Keep each project¡¯s width proportionate */
+    width: 300px;
+    max-width: 90%;
     text-align: center;
     background-color: #f8f9fa;
     padding: 15px;
